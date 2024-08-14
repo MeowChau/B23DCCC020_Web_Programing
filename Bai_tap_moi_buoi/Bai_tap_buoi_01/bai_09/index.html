@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Div Elements</title>
+</head>
+<body>
+
+<div>First div</div>
+<div>Second div</div>
+<div>Third div</div>
+
+<p id="div-count"></p>
+
+<script>
+    const divs = document.querySelectorAll("div");
+    const divCount = divs.length;
+    document.getElementById("div-count").textContent = `There are ${divCount} div elements on this page.`;
+</script>
+
+</body>
+</html>
