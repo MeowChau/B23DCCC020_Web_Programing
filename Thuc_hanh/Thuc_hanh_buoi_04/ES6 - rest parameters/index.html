@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript ES6 Example</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>JavaScript ES6 Example</h1>
+
+    <script type="text/babel">
+      // Định nghĩa hàm number với tham số biến
+      function number(num1, num2, ...numOther) {
+        console.log("x:", num1); // In tham số đầu tiên
+        console.log("y:", num2); // In tham số thứ hai
+        console.log("Other numbers:", numOther); // In các tham số còn lại dưới dạng mảng
+      }
+
+      // Gọi hàm number với nhiều tham số
+      number("one", "two", "three", "four", "five", "six");
+    </script>
+  </body>
+</html>

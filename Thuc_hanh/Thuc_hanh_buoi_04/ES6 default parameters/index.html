@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ES6 </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>ES6 default parameters</h1>
+
+    <script type="text/babel">
+      function multiply(a, b = 1) {
+        return a * b;
+      }
+      console.log(multiply(5, 2));
+      console.log(multiply(5));    
+    </script>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ES6 </title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>ES6 default parameters</h1>
+
+    <script type="text/babel">
+      function member(name) {
+        name = name || "Guess"; 
+        return name;
+      }
+      console.log(member()); 
+      console.log(member("Dương Minh Trí")); 
+    </script>
+  </body>
+</html>

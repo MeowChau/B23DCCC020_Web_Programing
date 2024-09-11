@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>ES6 - spread syntax</h1>
+
+    <script type="text/babel">
+      const oldArray = [1, 2, 3];
+      const newArray = [...oldArray, 4, 5];
+      console.log(newArray);  
+    </script>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <h1>ES6 - spread syntax</h1>
+
+    <script type="text/babel">
+      const oldObject = {
+        name: 'Dương Minh Trí'
+      };
+      const newObject = {
+        ...oldObject,
+        age: 4
+      };
+      console.log(newObject); 
+    </script>
+  </body>
+</html>
