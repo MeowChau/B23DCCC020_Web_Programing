@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Table</title>
+</head>
+<body>
+
+<div id="table-container"></div>
+
+<script>
+    const table = document.createElement("table");d
+    table.style.borderCollapse = "collapse";
+    for (let i = 0; i < 3; i++) {
+        const row = document.createElement("tr");
+        for (let j = 0; j < 3; j++) {
+            const cell = document.createElement("td");
+            cell.textContent = `Row ${i + 1}, Cell ${j + 1}`;
+            cell.style.border = "1px solid black"; 
+            cell.style.padding = "8px"; 
+            row.appendChild(cell);
+        }
+        table.appendChild(row);
+    }
+    document.getElementById("table-container").appendChild(table);
+</script>
+
+</body>
+</html>

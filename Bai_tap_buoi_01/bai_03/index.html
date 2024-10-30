@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add List Item</title>
+</head>
+<body>
+
+<ul id="list">
+    <li>a</li>
+    <li>b</li>
+</ul>
+
+<script>
+    const newItem = document.createElement("li");
+    newItem.textContent = "New c";
+    document.getElementById("list").appendChild(newItem);
+</script>
+
+</body>
+</html>
